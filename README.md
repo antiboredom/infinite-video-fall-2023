@@ -210,6 +210,8 @@ For the rest of the class, you should work on a single project. It's completely 
 
 ## Some Artists, Archives & Inspiration
 
+(in no particular order)
+
 - [Nam June Paik](https://americanart.si.edu/artist/nam-june-paik-3670)
 - [Soda Jerk](https://sodajerk.info/): [Hello Dankness](https://www.hellodankness.net/)
 - [Arthur Jafa](https://en.wikipedia.org/wiki/Arthur_Jafa): [LOVE IS THE MESSAGE, THE MESSAGE IS DEATH](https://www.youtube.com/watch?v=lKWmx0JNmqY)
@@ -240,6 +242,9 @@ For the rest of the class, you should work on a single project. It's completely 
 - [Gretchen Bender](https://spruethmagers.com/artists/gretchen-bender/)
 - [Disnovation: The Pirate Cinema](https://disnovation.org/piratecinema.php)
 - [Jeff Thompson: Computers on Law & Order](https://computersonlawandorder.tumblr.com/)
+- [Herdimas Anggara](https://ritual.engineer/)
+- [Marcus Coates: Dawn Chorus](https://vimeo.com/38149102)
+- [Jill Magid: Evidence Locker](https://www.jillmagid.com/projects/evidence-locker-2)
 - [Monoskop Video Art Archive](https://monoskop.org/Video_art)
 - [Big list of digital artists working with archives](http://collectheworld.linkartcenter.eu/)
 
