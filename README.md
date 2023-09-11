@@ -233,8 +233,15 @@ For the rest of the class, you should work on a single project. It's completely 
 - [Total Refusal: Red Redemption](https://totalrefusal.com/home/red-redemption)
 - [Bruce Connor: Crossroads](https://www.tomatazos.com/videos/468893/Crossroads-1976-Documental)
 - [Josh Begley](http://joshbegley.com/)
+- [Emily Jacir: Ramallah/New York](https://www.moma.org/collection/works/110909)
 - [Mimi Onuoha: Machine Sees More than it Says](https://mimionuoha.com/machine-sees-more-than-it-says)
+- [Addie Wagenknecht and Pablo Garcia: brbxoxo](https://www.pablogarcia.org/brbxoxo)
+- [Natalie Bookchin: Mass Ornament](https://bookchin.net/projects/mass-ornament/)
+- [Gretchen Bender](https://spruethmagers.com/artists/gretchen-bender/)
+- [Disnovation: The Pirate Cinema](https://disnovation.org/piratecinema.php)
+- [Jeff Thompson: Computers on Law & Order](https://computersonlawandorder.tumblr.com/)
 - [Monoskop Video Art Archive](https://monoskop.org/Video_art)
+- [Big list of digital artists working with archives](http://collectheworld.linkartcenter.eu/)
 
 
 
