@@ -70,7 +70,7 @@ Create a composition using just FFmpeg. Feel free to use [FFmpeg Explorer](https
 
 - [On the Dangers of Stochastic Parrots by Emily Bender et all](https://dl.acm.org/doi/pdf/10.1145/3442188.3445922)
 - [Language models can only write poetry by Allison Parrish](https://posts.decontextualize.com/language-models-poetry/)
-- [A Genealogy of Distant Reading[(http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html)
+- [A Genealogy of Distant Reading](http://www.digitalhumanities.org/dhq/vol/11/2/000317/000317.html)
 
 
 #### Assignment - Language (due week 4):
