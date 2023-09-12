@@ -104,7 +104,7 @@ Create a composition using MoviePy or VidPy. Experiment with order, randomness, 
 
 #### Readings
 
-- In Defense of the Poor Image
+- [In Defense of the Poor Image](https://www.e-flux.com/journal/10/61362/in-defense-of-the-poor-image/) by Hito Steyerl
 - [AI Is a Lot of Work](https://www.theverge.com/features/23764584/ai-artificial-intelligence-data-notation-labor-scale-surge-remotasks-openai-chatbots)
 
 
