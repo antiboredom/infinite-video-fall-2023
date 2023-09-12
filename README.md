@@ -245,6 +245,8 @@ For the rest of the class, you should work on a single project. It's completely 
 - [Herdimas Anggara](https://ritual.engineer/)
 - [Marcus Coates: Dawn Chorus](https://vimeo.com/38149102)
 - [Jill Magid: Evidence Locker](https://www.jillmagid.com/projects/evidence-locker-2)
+- [Hito Steyerl: How Not to be Seen: A Fucking Didactic Educational .MOV File](https://www.artforum.com/video/hito-steyerl-how-not-to-be-seen-a-fucking-didactic-educational-mov-file-2013-51651)
+- [Camille Henrot: Grosse Fatigue](https://www.moma.org/collection/works/175938)
 - [Monoskop Video Art Archive](https://monoskop.org/Video_art)
 - [Big list of digital artists working with archives](http://collectheworld.linkartcenter.eu/)
 
