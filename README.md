@@ -244,9 +244,12 @@ For the rest of the class, you should work on a single project. It's completely 
 - [Jeff Thompson: Computers on Law & Order](https://computersonlawandorder.tumblr.com/)
 - [Herdimas Anggara](https://ritual.engineer/)
 - [Marcus Coates: Dawn Chorus](https://vimeo.com/38149102)
+- [Tehching Hsieh: One Year Performance](https://vimeo.com/16280427)
 - [Jill Magid: Evidence Locker](https://www.jillmagid.com/projects/evidence-locker-2)
+- [Everything is Terrible](https://vimeo.com/eit)
 - [Monoskop Video Art Archive](https://monoskop.org/Video_art)
 - [Big list of digital artists working with archives](http://collectheworld.linkartcenter.eu/)
+- [Video Data Bank (archive of video art)](https://vdb.org/)
 
 
 
