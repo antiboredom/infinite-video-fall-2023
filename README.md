@@ -104,7 +104,7 @@ Create a composition using MoviePy or VidPy. Experiment with order, randomness, 
 
 #### Readings
 
-- In Defense of the Poor Image
+- [In Defense of the Poor Image](https://www.e-flux.com/journal/10/61362/in-defense-of-the-poor-image/) by Hito Steyerl
 - [AI Is a Lot of Work](https://www.theverge.com/features/23764584/ai-artificial-intelligence-data-notation-labor-scale-surge-remotasks-openai-chatbots)
 
 
@@ -247,6 +247,8 @@ For the rest of the class, you should work on a single project. It's completely 
 - [Tehching Hsieh: One Year Performance](https://vimeo.com/16280427)
 - [Jill Magid: Evidence Locker](https://www.jillmagid.com/projects/evidence-locker-2)
 - [Everything is Terrible](https://vimeo.com/eit)
+- [Hito Steyerl: How Not to be Seen: A Fucking Didactic Educational .MOV File](https://www.artforum.com/video/hito-steyerl-how-not-to-be-seen-a-fucking-didactic-educational-mov-file-2013-51651)
+- [Camille Henrot: Grosse Fatigue](https://www.moma.org/collection/works/175938)
 - [Monoskop Video Art Archive](https://monoskop.org/Video_art)
 - [Big list of digital artists working with archives](http://collectheworld.linkartcenter.eu/)
 - [Video Data Bank (archive of video art)](https://vdb.org/)
