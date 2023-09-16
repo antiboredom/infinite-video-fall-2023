@@ -22,6 +22,10 @@ The last 3-4 weeks of the class you'll work on a longer project with an open bri
 
 In either case, every week there will be an opportunity for a few students to share what they made with the rest of the class. 
 
+## Readings
+
+Readings are listed on the day they are assigned, not due. All readings that aren't already linked will be shared over discord. We'll devote a portion of each class to discussing the readings, with students taking turns leading the conversations.
+
 ## Schedule
 
 ### Week 1: Orientation
@@ -191,7 +195,7 @@ For the rest of the class, you should work on a single project. It's completely 
 - [OpenCV](https://opencv.org/) - computer vision library
 - [MoviePy](https://zulko.github.io/moviepy/) - Python library for editing video
 - [VidPy](https://antiboredom.github.io/vidpy/) - Another Python library for editing video
-- [Videogrep](https://github.com/antiboredom/videogrep)
+- [Videogrep](https://github.com/antiboredom/videogrep) - Create automatic supercuts
     - [Videogrep tutorial](https://lav.io/notes/videogrep-tutorial/)
     - [Videogrep & NLP tutorial](https://lav.io/notes/videogrep-and-spacy/)
 - [VLC](https://www.videolan.org/vlc/) - video player
