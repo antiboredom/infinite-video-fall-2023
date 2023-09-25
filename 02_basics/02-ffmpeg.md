@@ -54,7 +54,7 @@ You can specify times in seconds, or using traditional timestamps like `hh:mm:ss
 
 ## Specifying codecs
 
-Most audio and video is compressed in some way. The algorthms that deal with compressing, and decompressing audio & video are called *codecs*. By default ffmpeg will try to intelligently chose a codec for you, but you can also specify which codec you'd like to use.
+Most audio and video is compressed in some way. The algorithms that deal with compressing, and decompressing audio & video are called *codecs*. By default FFmpeg will try to intelligently chose a codec for you, but you can also specify which codec you'd like to use.
 
 To get a list of all available codecs (it'll be a long list):
 
@@ -70,7 +70,7 @@ For example:
 ffmpeg -i input.avi -c:v libx264 output.mp4
 ```
 
-You can also tell ffmpeg to copy the codec already in use:
+You can also tell FFmpeg to copy the codec already in use:
 
 ```
 ffmpeg -i input.mp4 -t 5.0 -c:v copy output.mp4
