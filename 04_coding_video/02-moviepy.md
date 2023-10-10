@@ -130,7 +130,7 @@ redclip.fps = 24 # note: you must specifiy frames per second if you aren't inclu
 redclip.write_videofile("red.mp4")
 ```
 
-### ImageClip
+#### ImageClip
 
 `ImageClip` let's you use images:
 
@@ -143,7 +143,7 @@ img.fps = 24 # note: you must specifiy frames per second if you aren't including
 img.write_videofile("my_image.mp4")
 ```
 
-### TextClip
+#### TextClip
 
 [`TextClip`](https://zulko.github.io/moviepy/ref/VideoClip/VideoClip.html#textclip) let's you draw text, and has many options for specifying fonts, text color, size and position:
 
@@ -155,7 +155,7 @@ txt_clip.fps = 24
 txt_clip.write_videofile("sometext.mp4")
 ```
 
-### AudioFileClip
+#### AudioFileClip
 
 You can also mix in audio with `AudioFileClip`.
 
