@@ -90,8 +90,8 @@ Create a supercut using Videogrep. Feel free to experiment with natural language
 
 #### Readings
 
-- When Film and Database Collide by Perry Bard
-- Always Already Just
+- [When Film and Database Collide by Perry Bard](https://www.networkcultures.org/_uploads/%236reader_VideoVortex2PDF.pdf#page=163)
+- Always Already Just by Dejan Grba
 
 
 #### Assignment - Procedural composition (due week 5):
