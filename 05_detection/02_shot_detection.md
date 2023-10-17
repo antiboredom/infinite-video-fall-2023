@@ -37,8 +37,8 @@ scene_list = detect(video, ContentDetector())
 for shot in scene_list:
 	start_time = shot[0].get_seconds()
 	end_time = shot[1].get_seconds()
- 	print("Start:" start_time)
- 	print("End:" end_time)
+ 	print("Start:", start_time)
+ 	print("End:", end_time)
 ```
 
 I've included an example file called `shots.py` which will run the scene detection on a video (or videos) that you provide, and save the results as a `.json` file. 
