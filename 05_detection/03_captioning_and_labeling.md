@@ -5,9 +5,9 @@ We can use machine learning to automatically caption or label scenes in a video.
 To get started, first install the requirements:
 
 ```bash
-pip install transformers
-pip install torch
-pip install Pillow
+pip3 install transformers
+pip3 install torch
+pip3 install Pillow
 ```
 
 HuggingFace provides a ton of different machine learning models that you can use in your Python code. It can be a bit overwhelming. Here we'll look at two kinds of models. One that classifies images, and  another that captions images.
