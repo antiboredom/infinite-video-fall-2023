@@ -8,7 +8,7 @@ Some machine learning models contain supplementary information about the images 
 
 Hugging face has a nice [tutorial on zero-shot classification](https://huggingface.co/docs/transformers/main/tasks/zero_shot_image_classification). And here's a [full list of models](https://huggingface.co/models?pipeline_tag=zero-shot-image-classification&sort=downloads) that support this method.
 
-To use a zero-shot classifier, you just supply a list of labels of things you're looking for. 
+To use a zero-shot classifier, you just supply a list of labels of things you're looking for.
 
 Here's an example using a single image.
 
@@ -30,3 +30,39 @@ for r in results:
 Results will be a list of dictionaries, each dictionary contents a label and score between 0.0 and 1.0
 
 To run this on a video, use the `custom_classifer_video.py` script. It will produce a `customlabels` json file with each scene labeled. To make a supercut of these, run `supercut_from_classifier.py`.
+
+## Visualgrep
+
+I've made an example script that combines scene detection, custom labeling, and super-cutting: `visualgrep.py`.
+
+To use:
+
+```bash
+python3 visualgrep.py --input "myvideo.mp4" --labels "first label" "second label" "third label" --threshold 0.7 --search "first label" --output output.mp4
+```
+
+`--input`: input video  
+`--label`: a list of labels to search for  
+`--threshold`: only include clips equal to or above this threshold (between 0 and 1)  
+`--search`: the search label to look for (defaults to the first one)  
+`--output`: the supercut to save to
+
+Please be aware that this script doesn't save a json file of labels. So each time you run it, it has to re-label everything. Meaning that it's good to play around with small video files, but not great for larger videos or collections of videos.
+
+## Fine-tuning a model
+
+Sometimes zero-shot classification doesn't work very well for particular labels you provide. In this situation, it can be better to train your own classifier based on a dataset of images that you provide. However, training your own machine learning model requires a ton of computational resources. Instead you can "fine-tune" an existing model. This means you start with a model that's already trained, and then add to the training with your own set of custom data.
+
+To do this you'll need to collect source material to train on. Make a folder called `dataset` (or something similar) and inside that folder create a new folder for each type of image you'd like your model to recognize. For example, if I wanted to detect cops vs workers, I'd make two folders: `cops` and `workers` and then put images of cops in the cops folder and images of workers in the workers folder. Try to collect at least 100 images for each label your training on.
+
+Because training a model, even fine-tuning one, can take a while on your own computer, I've prepared a google colab notebook that let's you fine-tune.
+
+Click here: https://colab.research.google.com/drive/1thtUPgv9CoaNM5xuWxLy2MdBO4LMpbQW
+
+In order to use the script, you'll need to first upload your dataset to your google drive, then mount the drive in the notebook.
+
+Change the DATA_DIR variable to the name of your dataset folder, keeping the start of the line "drive/MyDrive/". So if you have a folder called "cat_dog_dataset" the variable should be set to: "drive/MyDrive/cat_dog_dataset/"
+
+Then click the "play" button on each cell of code.
+
+After a bit you should have a new folder saved to your google drive called "mymodel". You can then download that folder and use it in your scripts.
