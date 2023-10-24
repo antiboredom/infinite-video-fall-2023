@@ -66,3 +66,42 @@ Change the DATA_DIR variable to the name of your dataset folder, keeping the sta
 Then click the "play" button on each cell of code.
 
 After a bit you should have a new folder saved to your google drive called "mymodel". You can then download that folder and use it in your scripts.
+
+To use, just replace the model name in any of our previous examples with the name of the folder that you've downloaded.
+
+### Automatically downloading images
+
+It's probabably a good idea to hand-craft the images you use to train a model, but if you just want to download a bunch _very hegemonic_ ones from the internet, I've included a script called `download_images.py`.
+
+The script looks like this:
+
+```python
+from bing_image_downloader import downloader
+
+search_terms = ["cat", "dog"]
+
+for query in search_terms:
+    downloader.download(
+        query,
+        limit=300,
+        output_dir="dataset",
+        adult_filter_off=False,
+        force_replace=False,
+        timeout=60,
+        verbose=True,
+    )
+```
+
+Replace the list of search terms with whatever you'd like, and it will download images from bing into a folder called "dataset" with subfolders for your search terms.
+
+Then, install the `bing-image-downloader` library with:
+
+```
+pip3 install bing-image-downloader
+```
+
+And run the script:
+
+```bash
+python3 download_images.py
+```
