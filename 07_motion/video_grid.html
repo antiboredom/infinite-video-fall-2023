@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Video Grid</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+
+    /* set the page to have a black background */
+    body {
+      background-color: black;
+    }
+
+    /* create a grid with 3 even columns 3 columns */
+    .video-grid {
+      display: grid;
+
+      /* 
+       1fr = 1 fraction of the available space
+       if you want 2 columns, use 1fr 1fr
+       if you want 4 columns, use 1fr 1fr 1fr 1fr
+      */
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    video {
+      /* set the width of videos to 100% of their container */
+      width: 100%;
+
+      /* 
+        set the aspect ratio of the video to 16:9
+        this will make the video fill the entire container
+        without stretching or squishing
+      */
+      aspect-ratio: 16/9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- the element that holds the videos -->
+  <div class="video-grid"></div>
+
+  <script>
+    // load videos from a json file called "vids.json"
+    async function loadVideos() {
+
+      // get the container where we will put the videos
+      const container = document.querySelector(".video-grid");
+
+      // create an observer that will play videos when they are in view and pause them when they are not
+      // this is helpful for performance because it means that only the videos that are in view will be playing
+      const videoObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (video) {
+          if (video.isIntersecting) {
+            video.target.play();
+          } else {
+            video.target.pause();
+          }
+        });
+      });
+
+      // fetch the json file and parse it into an array of video urls
+      const response = await fetch("vids.json");
+      let vids = await response.json();
+
+      // loop through the video urls and create a video element for each one
+      for (let v of vids) {
+        // create a video element
+        const player = document.createElement("video");
+
+        // set the video src to the url
+        player.src = v;
+
+        // don't preload the video
+        player.preload = "none";
+
+        // change this to true to show video controls
+        // player.controls = true;
+
+        // loop the video
+        player.loop = true;
+
+        // mute the video (playing the video automatically doesn't work without this)
+        player.muted = true;
+
+        // needed for ios
+        player.playsinline = true;
+
+        // add the video to our container element
+        container.appendChild(player);
+
+        // add the video to our observer
+        videoObserver.observe(player);
+      }
+    }
+
+    loadVideos();
+  </script>
+</body>
+
+</html>
