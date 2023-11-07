@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cutclip"
+version = "0.1.0"
+description = "cuts a clip"
+authors = ["Sam Lavigne <splavigne@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+moviepy = "^1.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+cutclip = 'cutclip:main'
