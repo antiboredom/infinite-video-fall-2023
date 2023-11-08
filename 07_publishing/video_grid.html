@@ -63,8 +63,9 @@
       });
 
       // fetch the json file and parse it into an array of video urls
-      const response = await fetch("vids.json");
-      let vids = await response.json();
+      const response = await fetch("videos.txt");
+      let vids = await response.text();
+      vids = vids.split("\n").map((v) => v.trim());
 
       // loop through the video urls and create a video element for each one
       for (let v of vids) {
