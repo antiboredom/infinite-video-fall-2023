@@ -220,7 +220,11 @@ cutclip = 'cutclip:main'
 
 ### Publishing
 
-To publish your code to [pypi](https://pypi.org/) and allow other users to install it, first create an account on pypi.
+To publish your code to [pypi](https://pypi.org/) and allow other users to install it, first create an account on pypi. Then go to your account settings, hit add token, copy that token and then pass it to poetry with:
+
+```
+poetry config pypi-token.pypi your-api-token
+```
 
 Then run:
 ```
