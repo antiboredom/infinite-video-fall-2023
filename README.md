@@ -135,10 +135,9 @@ Use an existing classifier, or train a new one to identify content in your video
 ---
 
 
-### Week 7: Camera motion
+### Week 7: Publishing
 
-- Pans, tilts, and zooms
-
+- Ways of publishing command line tools and putting video on the web
 
 #### Readings
 
