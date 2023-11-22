@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Video Grid</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* set the page to have a black background */
+      body {
+        background-color: black;
+        color: #fff;
+      }
+
+      /* create a grid with 3 even columns 3 columns */
+      .video-grid {
+        display: grid;
+
+        /* 
+       1fr = 1 fraction of the available space
+       if you want 2 columns, use 1fr 1fr
+       if you want 4 columns, use 1fr 1fr 1fr 1fr
+      */
+        grid-template-columns: 1fr 1fr 1fr;
+
+        padding: 40px;
+
+      }
+
+      video {
+        /* set the width of videos to 100% of their container */
+        width: 100%;
+
+        /* 
+        set the aspect ratio of the video to 16:9
+        this will make the video fill the entire container
+        without stretching or squishing
+      */
+        aspect-ratio: 16/9;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- the element that holds the videos -->
+    <div class="video-grid"><button>Click to load</button></div>
+
+    <script>
+      // get the container where we will put the videos
+      const container = document.querySelector(".video-grid");
+
+      // load videos from a json file called "vids.json"
+      async function loadVideos() {
+        container.innerHTML = "";
+
+        // create an observer that will play videos when they are in view and pause them when they are not
+        // this is helpful for performance because it means that only the videos that are in view will be playing
+        const videoObserver = new IntersectionObserver(function (entries, observer) {
+          entries.forEach(function (video) {
+            if (video.isIntersecting) {
+              video.target.play();
+            } else {
+              video.target.pause();
+            }
+          });
+        });
+
+        // fetch a text file and parse it into an array of video urls
+        const response = await fetch("videos.txt");
+        let vids = await response.text();
+        vids = vids.split("\n").map((v) => v.trim());
+
+        // loop through the video urls and create a video element for each one
+        for (let v of vids) {
+          // create a video element
+          const player = document.createElement("video");
+
+          // set the video src to the url
+          player.src = v;
+
+          // don't preload the video
+          player.preload = "none";
+
+          // change this to true to show video controls
+          // player.controls = true;
+
+          // loop the video
+          player.loop = true;
+
+          // needed for ios
+          player.playsinline = true;
+
+          // opacity setup
+          player.style.opacity = 0.3;
+
+          // Audio section
+          player.volume = 0;
+
+         // Add any hover effects to the video here:
+          player.addEventListener('mouseenter', (event) => {
+            fadeAudioIn(event.target);
+            event.target.style.opacity = 1;
+          })
+
+         // Remove hover effects from the video here
+          player.addEventListener('mouseout', (event) => {
+            fadeAudioOut(event.target);
+            fadeImageOut(event.target);
+          })
+
+          // Fade out audio out on a clip by reducing the volume by 0.1 over and over again until it's at 0
+          function fadeAudioOut(videoClip){
+            // change the lowest you want audio to go here (don't go below 0.1):
+            let LOWEST_POSSIBLE_VOLUME = 0.1;
+
+            if(videoClip.volume >= LOWEST_POSSIBLE_VOLUME){
+                videoClip.volume -= 0.1;
+                setTimeout(fadeAudioOut.bind(null, videoClip), 5);
+            }
+          }
+
+          // Fade out audio in on a clip by increasing the volume by 0.1 over and over again until it's close to full
+          function fadeAudioIn(videoClip){
+            // change the highest you want audio to go here (don't go below 0.9):
+            let HIGHEST_POSSIBLE_VOLUME = 0.9;
+
+            if(videoClip.volume <= HIGHEST_POSSIBLE_VOLUME){
+                videoClip.volume += 0.1;
+                setTimeout(fadeAudioIn.bind(null, videoClip), 5);
+            }
+          }
+
+          function fadeImageOut(videoClip){
+            // change the lowest you want opacity to go here (don't go below 0.1):
+            let LOWEST_POSSIBLE_OPACITY = 0.3;
+
+            if(videoClip.style.opacity >= LOWEST_POSSIBLE_OPACITY){
+                videoClip.style.opacity -= 0.1;
+                setTimeout(fadeImageOut.bind(null, videoClip), 5);
+            }
+          }
+
+
+          // add the video to our container element
+          container.appendChild(player);
+
+          // add the video to our observer
+          videoObserver.observe(player);
+        }
+      }
+
+      document.querySelector("button").addEventListener("click", loadVideos);
+    </script>
+  </body>
+</html>
