@@ -96,22 +96,6 @@ if __name__ == "__main__":
         type=float,
         help="Resize frame factor (between 0.1 and 1.0)",
     )
-    # parser.add_argument(
-    #     "--minhits",
-    #     "-mh",
-    #     dest="minhits",
-    #     default=2,
-    #     type=int,
-    #     help="Minimum hits to count",
-    # )
-    # parser.add_argument(
-    #     "--maxmisses",
-    #     "-ms",
-    #     dest="maxmisses",
-    #     default=3,
-    #     type=int,
-    #     help="Maximum misses",
-    # )
 
     args = parser.parse_args()
 
