@@ -6,6 +6,10 @@
 **Time:** Tuesdays 6pm to 9pm & Wednesdays 10am to 1pm (NY time)  
 **Office Hours:** By appointment  
 
+## UPDATE
+
+This course is now concluded! You can view the participants' final projects at [https://lav.io/notes/infinite-video-showcase/](https://lav.io/notes/infinite-video-showcase/)
+
 ## Description
 
 How can code and automation help us see and manipulate large collections of videos in new ways? What do novel approaches in machine learning help make evident? On the flip side, what do these same approaches prevent us from seeing? What do they obscure? How can automated "content generation" be leveraged for political, poetic, and critical ends?
